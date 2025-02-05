@@ -3,3 +3,18 @@ environment:
   SPACES_NAME: "${SPACES_NAME}"
   SPACES_KEY: "${SPACES_KEY}"
   SPACES_SECRET: "${SPACES_SECRET}"
+packages:
+  - name: storage
+    shared: false
+    environment: {}
+    parameters: {}
+    annotations: {}
+    functions:
+      - name: previews
+        binary: false
+        main: ""
+        runtime: nodejs:default
+        parameters: {}
+        environment: {}
+        annotations: {}
+        limits: {}
